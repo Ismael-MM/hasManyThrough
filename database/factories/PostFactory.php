@@ -4,8 +4,8 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use App\Models\Post;
 use App\Models\User;
-use App\Models\post;
 
 class PostFactory extends Factory
 {

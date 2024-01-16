@@ -1,12 +1,14 @@
 models:
-  country:
+  Country:
     name: string
+    relationships:
+      hasMany: User
   
-  post:
+  Post:
     name: string
     user_id: id
 
-seeders: country, post
+seeders: Country, Post
 
 controllers:
   # ...
