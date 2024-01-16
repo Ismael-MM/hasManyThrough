@@ -1,0 +1,13 @@
+created:
+    - database/factories/CountryFactory.php
+    - database/factories/PostFactory.php
+    - database/migrations/2024_01_16_172552_create_countries_table.php
+    - database/migrations/2024_01_16_172553_create_posts_table.php
+    - app/Models/country.php
+    - app/Models/post.php
+    - database/seeders/CountrySeeder.php
+    - database/seeders/PostSeeder.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable', departamento_id: 'biginteger unsigned', especialidad_id: 'biginteger unsigned', observaciones: string, horas_total: 'boolean unsigned', rol: string, estado: string }
+    country: { name: string }
+    post: { name: string, user_id: id }
